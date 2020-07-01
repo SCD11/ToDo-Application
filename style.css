@@ -1,0 +1,166 @@
+body{
+    /* background-image:linear-gradient(to right  ,rgb(86, 183, 207),rgb(93, 79, 219)) */
+    background-color:rgb(58,57,55);
+}
+p{  margin-left:62%;
+    font-style:italic;
+    /* font-family: monospace; */
+    color:lightgray;
+}
+h1{
+    /* margin-left:1%; */
+    padding:0px;
+    font:3.2rem monospace;
+    color:white;
+    margin-top:20px;
+    font-weight:bolder;
+    /* text-decoration-line: underline; */
+}
+#container{
+   border:2px solid white;
+   width:300px;
+   height:600px; 
+   background-color: white;
+   margin:auto;
+   margin-top:40px;
+   border-radius:5px;
+   /* box-shadow:0px 0px 5px paleturquoise; */
+   font:1.2rem monospace;
+   color:rgb(58,57,55);
+}
+#container .controls{
+    /* margin:0px; */
+    width:300px;
+    /* background-color:rgb(97, 29, 161); */
+    height: 200px;
+    background-color:lightseagreen;
+    /* border:5px solid white; */
+    border-radius:5px;
+}
+.controls input{
+    margin-bottom:30px;
+    margin-top:23px;
+    /* box-sizing: 190px; */
+    width:240px;
+    height: 25px;
+    margin-left:23px;
+    margin-right:23px;
+    padding:5px;
+    font:0.9em monospace;
+    border:3px solid white;
+    border-radius:10px;
+    background-color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.controls  #add{
+    width:250px;
+    height:22px;
+    margin-left:25px;
+    margin-right:25px;
+    background-color:lightskyblue;   
+    border:3px solid lightskyblue;
+    border-radius:10px;
+    margin-bottom:10px;
+    font-family:monospace;
+    font-weight: bolder;
+    padding-bottom:3px;
+}
+.controls  #remove{  
+    width:250px;                                        
+    margin-left:25px;                                       
+    margin-right:25px;                                        
+    font-family:monospace;
+    border:3px solid lightcoral;                                        
+    border-radius:10px;
+    background-color:lightcoral;   
+    margin-bottom:10px;
+    height:22px;
+    font-weight: bolder;
+    padding-bottom:3px;
+}
+.controls  #removeAll{  
+    width:250px;                                        
+    margin-left:25px;                                       
+    margin-right:25px;                                        
+    font-family:monospace;
+    font-weight: bolder;
+    border:3px solid lightgreen;                                        
+    border-radius:10px;
+    background-color:lightgreen;   
+    margin-bottom:30px;
+    height:22px;
+    padding-bottom:3px;
+}
+
+#list{
+    list-style-type: none;
+    background-color:rgb(58,57,55);
+    height:370px;
+    border-radius:5px;
+    margin-top:2px;
+    /* color:whitesmoke; */
+    padding-top:18px;
+    padding-right:10px;
+    padding-left:10px;
+
+    /* width:250px; */
+}
+li{
+    background-color:white;
+    font:1.0rem monospace;
+    /* height:20px; */
+    word-wrap:break-word;
+    margin-left:3px;
+    margin-bottom:3px;
+    width:275px;
+    /* padding-left:5px; */
+    border-radius:20px;
+    padding-left:0px;
+    padding-bottom:3px;
+    opacity: 0.0;
+    /* padding-bottom:10px; */
+}
+#container ul li #check{
+    float:left;
+    width:1.0rem;
+
+    position:relative;
+    height:1.0rem;
+    margin-left:4px;
+    /* position: relative; */
+    -webkit-appearance: none;
+    border: 2px solid gray;
+    border-radius:100px;
+    background-color:gray;
+    /* background-color:grey; */
+    outline:0;
+}
+#container ul li #check:checked:after{
+    content:'\2714';
+    font-size:11px;
+    position:absolute;
+    top:-2px;
+    left:2px;
+    color:rgb(10, 10, 10);
+}
+#container ul li input[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+    color:rgba(0,0,0.3);
+}
+#container .controls #input:focus{
+    outline:0;
+}
+#container .controls button:focus{
+    outline:0;
+}
+#container .controls button:hover{
+    transform:scale(1.05);
+}
+.mycheck{
+    opacity: 0.5;
+}
+.visual{
+   
+    opacity: 1!important;
+}
